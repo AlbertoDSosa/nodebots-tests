@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    $(document).ready(function() {
+      var socket = io.connect('http://localhost:8080');
+      $('#button_green').click(function(e){
+        socket.emit('click_green');
+        e.preventDefault();
+      });
+
+      $('#button_blue').click(function(e){
+        socket.emit('click_blue');
+        e.preventDefault();
+      });
+
+      $('#button_red').click(function(e){
+        socket.emit('click_red');
+        e.preventDefault();
+      });
+    });  
+  </script>
+</head>
+<body>
+  <button id="button_blue" href="#">LED BLUE ON/OFF</button>
+  <button id="button_red" href="#">LED RED ON/OFF</button>
+  <button id="button_green" href="#">LED GREEN ON/OFF</button>
+</body>
+</html>
