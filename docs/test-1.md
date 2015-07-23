@@ -2,6 +2,7 @@
 
 ## Requeriments
 - [Gamepad](https://github.com/creationix/node-gamepad)
+- [Socket.io](http://socket.io/)
 
 ### Terminal comands
     $ npm install
