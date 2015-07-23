@@ -5,7 +5,7 @@
 
 ### Terminal comands
     $ npm install
-	$ node /test-1/ledtest.js
-    $ node /test-1/webtest.js
+	$ node ledtest.js
+    $ node webtest.js
 
 ![Test-1](https://github.com/AlbertoDSosa/nodebots-tests/blob/master/docs/img/test-1.png "Test-1 LEDs")
